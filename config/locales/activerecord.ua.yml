@@ -7,6 +7,7 @@ ua:
         title: 'Назва статті'
         summary: 'Скорочено'
         body: 'Текст статті'
+        all_tags: 'Теги'
     errors:
       messages:
         blank: 'не може бути порожнім'
