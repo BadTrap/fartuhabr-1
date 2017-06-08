@@ -1,0 +1,12 @@
+ua:
+  activerecord:
+    models:
+      post: 'Стаття'
+    attributes:
+      post:
+        title: 'Назва статті'
+        summary: 'Скорочено'
+        body: 'Текст статті'
+    errors:
+      messages:
+        blank: 'не може бути порожнім'
