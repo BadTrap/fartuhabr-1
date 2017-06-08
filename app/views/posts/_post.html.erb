@@ -14,6 +14,6 @@
   <%= post.summary%>
   </section>
   <section class="post-summary">
-    <%= raw post.tags.map(&:name).map{|t| link_to t, tag_path(t), class: 'tag tag-default'}.join(' ')%>
+    <%= raw post.tags.map(&:name).map{|t| link_to t, tag_path(t), class: 'badge badge-primary'}.join(' ')%>
   </section>
 </article>

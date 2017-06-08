@@ -58,3 +58,4 @@ gem 'jquery-rails'
 gem 'carrierwave', '~> 1.0' #картинки
 gem "mini_magick" #зміна розміру картинок
 gem 'trix' #редактор
+gem 'will_paginate', '~> 3.1.0'
