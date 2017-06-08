@@ -9,9 +9,24 @@
   </head>
 
   <body>
-    <%= link_to 'Головна', posts_path %>
-    <%= link_to 'Нова стаття', new_post_path %>
+    <div class='container'>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="#">Navbar</a>
 
-    <%= yield %>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Головна
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= posts_path %>">Статті</a>
+      </li>
+    </ul>
+  <%= link_to 'Нова стаття', new_post_path, class: 'btn btn-success' %>
+      </nav>
+    </div>
+  <div class="container main">
+        <%= yield %>
+  </div>
   </body>
 </html>
