@@ -11,6 +11,7 @@ before_action :set_category, only: [:show, :edit, :update, :destroy]
 
   def new
     @category = Category.new
+    @categories = Category.all.order(:name)
   end
 
   def create
@@ -18,19 +19,21 @@ before_action :set_category, only: [:show, :edit, :update, :destroy]
     if @category.save
       redirect_to categories_path, success: 'Категорія створена'
     else
+      @categories = Category.all.order(:name)
       flash.now[:danger] = 'Категорія не створена!'
       render :new
     end
   end
 
   def edit
-
+    @categories = Category.where("id != #{@category.id}").order(:name)
   end
 
   def update
     if @category.update_attributes(category_params)
       redirect_to categories_path, success: 'Категорія змінена'
     else
+      @categories = Category.where("id != #{@category.id}").order(:name)
       flash.now[:danger] = 'Категорія не змінена!'
       render :edit
     end
@@ -47,6 +50,6 @@ before_action :set_category, only: [:show, :edit, :update, :destroy]
   end
 
   def category_params
-    params.require(:category).permit(:name)
+    params.require(:category).permit(:name, :parent_id)
   end
 end

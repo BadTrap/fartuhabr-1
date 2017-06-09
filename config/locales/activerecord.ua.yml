@@ -10,6 +10,7 @@ ua:
         all_tags: 'Теги'
       category:
         name: 'Назва'
+        parent_id: 'Батьківська категорія'
     errors:
       messages:
         blank: 'не може бути порожнім'
