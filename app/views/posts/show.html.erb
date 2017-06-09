@@ -4,16 +4,17 @@
   <section class="post-head">
     <h1><%=  @post.title %></h1>
     <small>
-      <time><%= @post.created_at.to_date.strftime("%d.%m.%y")%></time>
+      <time><%= @post.created_at.to_date.strftime("%B %d, %Y")%></time>
       |
       <% if @post.category.present? %>
       <%= link_to @post.category.name, @post.category %>
       <% end %>
+      <% if user_signed_in? %>
       |
       <%= link_to 'Редагувати', edit_post_path(@post) %>
       |
       <%= link_to 'Видалити', post_path(@post), method: :delete, data: {confirm: "Впевнені?"} %>
-    </small>
+      <% end %></small>
   </section>
   <section class="post-body">
     <%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %>
