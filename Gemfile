@@ -60,3 +60,4 @@ gem "mini_magick" #зміна розміру картинок
 gem 'trix' #редактор
 gem 'will_paginate', '~> 3.1.0'
 gem 'ancestry'#для створення дерева категорій
+gem 'devise'
