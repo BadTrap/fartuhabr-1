@@ -14,12 +14,13 @@ ua:
       title: 'Редагування статті'
     form:
       submit: '%{action} статтю'
-  categories:
-    index:
-      title: 'Категорії'
-    new:
-      title: 'Нова категорія'
-    edit:
-      title: 'Редагування категорії'
-    form:
-      submit: '%{action} категорію'
+  admin:
+    categories:
+      index:
+        title: 'Категорії'  
+      new:
+        title: 'Нова категорія'
+      edit:
+        title: 'Редагування категорії'
+      form:
+        submit: '%{action} категорію'
