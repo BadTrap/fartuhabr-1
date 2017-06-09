@@ -8,16 +8,18 @@ ua:
   posts:
     index:
       title: 'Статті'
-    new:
-      title: 'Нова стаття'
-    edit:
-      title: 'Редагування статті'
-    form:
-      submit: '%{action} статтю'
+
   admin:
+    posts:
+          new:
+            title: 'Нова стаття'
+          edit:
+            title: 'Редагування статті'
+          form:
+            submit: '%{action} статтю'
     categories:
       index:
-        title: 'Категорії'  
+        title: 'Категорії'
       new:
         title: 'Нова категорія'
       edit:

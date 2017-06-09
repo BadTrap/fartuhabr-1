@@ -14,3 +14,5 @@ ua:
     errors:
       messages:
         blank: 'не може бути порожнім'
+        required: 'не може бути порожнім'
+        
