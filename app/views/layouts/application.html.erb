@@ -19,7 +19,7 @@
             <a class="nav-link" href="<%= posts_path %>">Статті</a>
           </li>
         </ul>
-        
+
         <%= link_to 'Нова стаття', new_post_path, class: 'btn btn-success' %>
       </nav>
     </div>
@@ -39,7 +39,12 @@
         </div>
         <div class="col-md-3">
           <%= render 'shared/submenu' %>
-
+          <div class="tag_cloud">
+            <h2>Теги</h2>
+            <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
+            <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
