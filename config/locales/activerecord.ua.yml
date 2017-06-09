@@ -8,6 +8,8 @@ ua:
         summary: 'Скорочено'
         body: 'Текст статті'
         all_tags: 'Теги'
+      category:
+        name: 'Назва'
     errors:
       messages:
         blank: 'не може бути порожнім'
