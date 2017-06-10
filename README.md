@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Розробка сайту "Habrahabr"
 
-Things you may want to cover:
+Програмний продукт написанний командою з 3 людей
 
-* Ruby version
+Те, що треба знати при використанні:
 
-* System dependencies
+* Ruby version:  2.4.0
 
-* Configuration
+* Rails version:  5.0.3
+  
+* System dependencies: Ubuntu
+  
+* Configuration: PC with Ubuntu
+  
+* Database: PostgreSQL
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Services: Heroku, GitHub
